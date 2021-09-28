@@ -27,9 +27,9 @@
 ## Creation steps:
 1. Set the Environment variables: JAVA_HOME and M2_HOME (see: [001_JMaven_][1])
 1. Run the IntelliJ IDEA
-2. Create `New project`
+2. Create `New project`<br/>
 ![NewProject][2]
-3. Choose `Maven` -> Click button `[Next]`
+3. Choose `Maven` -> Click button `[Next]`<br/>
 ![NewMavenProject][3]
 4. Choose the **Location** (Exp.: `#_JavaEnterprise_`)
 5. Type **Name** (Exp.: `002_JMvnWebapp_`)
@@ -37,7 +37,7 @@
 7. Type GroupId: *domainL1*.*domainL2*.*domainL3* (Exp.: `pro.yoric.it`)
 8. Type ArtifactId: *projectName* (Exp.: `Parking`)
 9.  Type Version: *versionNumber* (Exp.: `4.0.23.7`)
-10. Click button `[Finish]`
+10. Click button `[Finish]`<br/>
 ![NewMavenCoordinateProject][4]
 
 
