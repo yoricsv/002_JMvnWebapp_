@@ -1,4 +1,4 @@
-## [002_JMvnWebapp_][DescPrj]
+## [002_JMvnWebapp_][DescPrj] > **Project build automation**
 
 ## <p align=center>[Project][DescPrj] | [Building][AutoBld] | [Installing][AutoInst] <br/> [Web-app][WebBld] | [Modularity][Module] | [Dependency][DepMng]</p>
 
@@ -11,12 +11,12 @@
 * [Dependency management][DepMng]
 -->
 
-[DescPrj]: README.md
-[AutoBld]: res/read/Maven_BuildAutomation.md
-[AutoInst]: res/read/Maven_SetupAutomation.md
-[WebBld]: res/read/Maven_WebApplication.md
-[Module]: res/read/Maven_ModularityProject.md
-[DepMng]: res/read/Maven_DependencyManagement.md
+[DescPrj]: ../../README.md
+[AutoBld]: Maven_BuildAutomation.md
+[AutoInst]: Maven_SetupAutomation.md
+[WebBld]: Maven_WebApplication.md
+[Module]: Maven_ModularityProject.md
+[DepMng]: Maven_DependencyManagement.md
 
 ---
 <br/>
