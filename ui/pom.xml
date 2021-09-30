@@ -4,14 +4,79 @@
          xsi:schemaLocation ="http://maven.apache.org/POM/4.0.0
                               http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>Parking</artifactId>
         <groupId>pro.yoric.it</groupId>
         <version>4.0.0</version>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-
     <artifactId>ui</artifactId>
+
+    <packaging>war</packaging>
+
+    <dependencies>
+        <!-- javax.servlet need for use this -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-catalina</artifactId>
+            <version>10.0.11</version>
+        </dependency>
+
+        <!-- Jetty plugin need for debugging web-app-->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+            <version>11.0.6</version>
+        </dependency>
+
+        <!-- Jackson need to handling request in json format (might use xml)-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://localhost:8080/manager</url>
+                    <server>localhost</server>
+                    <path>/${project.build.finalName}</path>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.43.v20210629</version>
+                <configuration>
+                    <scanIntervalSeconds>2</scanIntervalSeconds>
+                    <!-- Jetty port by default 9999 (would be change) -->
+                    <httpConnector>
+                        <port>9999</port>
+                    </httpConnector>
+                    <!-- contextPath is a place where our app will be located -->
+                    <webApp>
+                        <contextPath>/Parking</contextPath>
+                    </webApp>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>

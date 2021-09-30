@@ -1,11 +1,49 @@
 package pro.yoric.parking;
 
-public class UIServlet
-{
-    public static void main(String... args)
-    {
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
+public class UIServlet extends HttpServlet
+{
+    @Override
+    public void init(ServletConfig config) throws ServletException
+    {
+        super.init(config);
     }
+
+    @Override
+    public void service(
+            ServletRequest req,
+            ServletResponse resp)
+        throws
+            ServletException,
+            IOException
+    {
+        super.service(req, resp);
+        resp.setContentType("text/html");
+        resp.getWriter().write("Method Service\n");
+    }
+
+    @Override
+    protected void doGet(
+            HttpServletRequest req,
+            HttpServletResponse resp)
+        throws
+            ServletException,
+            IOException
+    {
+        //super.doGet(req, resp);
+        resp.getWriter().write("Method doGet\n");
+    }
+
+    @Override
+    public void destroy(){}
 }
 
 
