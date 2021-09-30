@@ -18,7 +18,6 @@
 [Module]: res/read/Maven_ModularityProject.md
 [DepMng]: res/read/Maven_DependencyManagement.md
 
-<br/>
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
 # <p align=center><i>Project name:</i> "<b>Parking</b>"</p>
