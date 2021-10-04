@@ -1,0 +1,49 @@
+@charset "utf-8"
+
+@import reset, color_scheme
+
+body
+    background-color : $bg_color_whitesmoke
+    #wrapper
+        header
+            background-color    : $bg_color_linen
+            display             : block
+            font-weight         : 700
+            text-align          : center
+            h1
+                color                   : $text_color_black
+                font-family             : sans-serif
+                font-size               : 5vmax
+                font-style              : oblique
+                padding                 : 20px 0
+        form
+            background-color    : white
+            border              : 1px solid $border_color_gray
+            input
+                background-color        : $bg_color_whitesmoke
+                border                  : 5px solid $border_color_mediumblue
+                border-radius           : 23px
+                -webkit-border-radius   : 23px
+                -moz-border-radius      : 23px
+                -ms-border-radius       : 23px
+                -o-border-radius        : 23px
+                display                 : block
+                font-size               : 5vmax
+                font-weight             : 700
+                max-height              : 150px
+                min-height              : 100px
+                margin                  : auto
+                width                   : 80%
+            .pay,
+            .open
+                color                   : $text_color_darkslateblue
+                margin                  : 40px auto
+                &:hover
+                    background-color        : $hover_bg_color_lightcyan
+                    border                  : 5px solid $hover_border_color_forestgreen
+            .open
+                &:hover
+                    color                   : $hover_text_color_slateblue 
+            .pay
+                &:hover
+                    color                   : $hover_text_color_crimson
