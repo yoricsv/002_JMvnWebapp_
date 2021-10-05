@@ -22,6 +22,13 @@
 
 # <p align=center><i>Project name:</i> "<b>Parking</b>"</p>
 
+An interface required for parking operators in the event of a system failure.
+For example:
+* The license plate is dirty and can't be identified by the scanner.
+* To manage free parking.
+* To check payment, etc.
+
+
 ## Stages of creating a multi-module project:
 
 ### The steps:
