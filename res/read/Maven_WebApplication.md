@@ -1,6 +1,6 @@
 ## [002_JMvnWebapp_][DescPrj] > **Web application building**
 
-## <p align=center>[Project][DescPrj] | [Building][AutoBld] | [Installing][AutoInst] <br/> [Web-app][WebBld] | [Modularity][Module] | [Dependency][DepMng]</p>
+### <p align=center>[Project][DescPrj] | [Building][AutoBld] | [Installing][AutoInst] <br/> [Web-app][WebBld] | [Modularity][Module] | [Dependency][DepMng]</p>
 
 <!--
 * [Project description][DescPrj]
@@ -11,15 +11,14 @@
 * [Dependency management][DepMng]
 -->
 
-[DescPrj]: ../../README.md
-[AutoBld]: Maven_BuildAutomation.md
+[DescPrj]:  ../../README.md
+[AutoBld]:  Maven_BuildAutomation.md
 [AutoInst]: Maven_SetupAutomation.md
-[WebBld]: Maven_WebApplication.md
-[Module]: Maven_ModularityProject.md
-[DepMng]: Maven_DependencyManagement.md
+[WebBld]:   Maven_WebApplication.md
+[Module]:   Maven_ModularityProject.md
+[DepMng]:   Maven_DependencyManagement.md
 
 ---
-<br/>
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
 # <p align=center><i>Project name:</i> "<b>Parking</b>"</p>
